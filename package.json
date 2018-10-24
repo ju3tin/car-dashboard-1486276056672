@@ -11,7 +11,9 @@
     "codecov": "npm run test && (codecov || true)",
     "postinstall": "npm run build",
     "build": "gulp build-html",
-    "watch": "gulp server:watch"
+    "watch": "gulp server:watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,11 +25,11 @@
     "body-parser": "1.15.2",
     "compression": "1.6.2",
     "dotenv": "^2.0.0",
-    "express": "4.14.0",
+    "express": "4.15.5",
     "express-rate-limit": "^2.6.0",
     "express-secure-only": "^0.2.1",
     "express-status-monitor": "^0.1.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean-css": "2.3.2",
     "gulp-develop-server": "^0.5.1",
     "gulp-load-plugins": "^1.4.0",
@@ -37,7 +39,8 @@
     "helmet": "^3.1.0",
     "vcap_services": "^0.2.0",
     "watson-developer-cloud": "^2.14.3",
-    "whatwg-fetch": "^2.0.1"
+    "whatwg-fetch": "^2.0.1",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "eslint": "^3.12.2",
@@ -49,5 +52,6 @@
   "engine": {
     "node": ">= 6.9.x",
     "npm": ">=3.9.x"
-  }
+  },
+  "snyk": true
 }
