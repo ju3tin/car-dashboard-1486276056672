@@ -27,7 +27,7 @@
     "express-rate-limit": "^2.6.0",
     "express-secure-only": "^0.2.1",
     "express-status-monitor": "^0.1.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean-css": "2.3.2",
     "gulp-develop-server": "^0.5.1",
     "gulp-load-plugins": "^1.4.0",
